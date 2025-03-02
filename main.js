@@ -1,10 +1,12 @@
-const navbar = document.getElementById('navbar');
-const menu = document.getElementById('menu');
-const icon = document.getElementById('icon');
-let openNavbar = false;
+document.addEventListener('DOMContentLoaded', function () {
+	const navbarToggle = document.getElementById('navbar');
+	const closeButton = document.querySelector('nav .xmark');
+	const menu = document.getElementById('menu');
 
-navbar.addEventListener('click', function () {
-	openNavbar = !openNavbar;
-	menu.classList.toggle('active', openNavbar);
-	icon.className = openNavbar ? 'fa-solid fa-x' : 'fa-solid fa-bars';
+	function toggleNavbar() {
+		menu.classList.toggle('active');
+	}
+
+	navbarToggle.addEventListener('click', toggleNavbar);
+	closeButton.addEventListener('click', toggleNavbar);
 });
