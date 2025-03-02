@@ -45,7 +45,8 @@ html {
 			align-items: center;
 			width: fit-content;
 
-			li {
+			li,
+			a {
 				list-style-type: none;
 				color: #f7f7f7;
 			}
@@ -74,7 +75,8 @@ html {
 			font-size: 3.4rem;
 			gap: 2rem;
 
-			li:hover {
+			li:hover,
+			a:hover {
 				cursor: pointer;
 			}
 		}
@@ -148,7 +150,8 @@ html {
 			#external-links {
 				font-size: 4.2rem;
 
-				li:hover {
+				li:hover,
+				a:hover {
 					color: #f2d5a0;
 				}
 			}
